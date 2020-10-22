@@ -60,11 +60,14 @@ class ViewsIssueHook < Redmine::Hook::Listener
 
     groups
   end
-
+  # Quick fix for the error message: "builtin not found" while running the method "def <=>(role)" in app/modles/roles.rb
+  # Remark following line to remove "Current user" in groups in order to prevent error occured. 
+  # add_entry_to_group(groups, l(:label_custom_view_assigned_current_user), User.current.id, "<< #{l(:label_me)} >>")
   def grouping_by_role(users,issue)
     groups = {}
     current_project = Project.find(issue.project_id)
-    add_entry_to_group(groups, l(:label_custom_view_assigned_current_user), User.current.id, "<< #{l(:label_me)} >>")
+    
+    # add_entry_to_group(groups, l(:label_custom_view_assigned_current_user), User.current.id, "<< #{l(:label_me)} >>")
 
     Role.order(:position).each do |role|
       users.each do |user|
