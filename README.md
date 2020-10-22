@@ -23,12 +23,12 @@ need to restart Redmine for the plugin to be available.
 
 ### v1.2.0
 
-* For Redmine 4.1.1
+### For Redmine 4.1.1
 
-  Environment:
-    Redmine version 4.1.1.stable
-    Ruby version    2.6.6-p146 (2020-03-31) [x86_64-linux]
-    Rails version   5.2.4.2
+  * Environment:
+    ** Redmine version 4.1.1.stable
+    ** Ruby version    2.6.6-p146 (2020-03-31) [x86_64-linux]
+    ** Rails version   5.2.4.2
 
 ### v1.1.0
 * For Redmine 3.4 or higher.
