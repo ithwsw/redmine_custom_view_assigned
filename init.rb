@@ -11,7 +11,7 @@ Redmine::Plugin.register :redmine_custom_view_assigned do
   version     '1.1.0'
   url         'http://alexbocharov.github.io/redmine_custom_view_assigned'
 
-  requires_redmine :version_or_higher => '4.0.0'
+  requires_redmine :version_or_higher => '4.1.1'
 
   settings :default => {
         'filtering_users' => true,
